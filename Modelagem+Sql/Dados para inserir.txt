@@ -1,0 +1,118 @@
+
+############### PARA ADICIONAR ALUNOS:
+
+INSERT INTO Alunos (id_aluno, nome, data_nascimento, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(1,'Anderson Alves','1987/05/07','M','2020/10/27 15:00:00','ANDSS');
+
+INSERT INTO Alunos (id_aluno, nome, data_nascimento, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(2,'Alex Henrique De Souza','1996/11/05','M','2018/10/21 15:00:00','Alex');
+
+
+INSERT INTO Alunos (id_aluno, nome, data_nascimento, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(3,'Alessandro Henrique Peres Porfirio','1989/10/04','M','2019/11/02 15:00:00','ALESS');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(4,'Maria Das Rosas','04/10/1969','F','02/06/2016 13:11:07','MariaL');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(5,'Juliana De Souza','10/02/1993','F','14/07/2017 17:05:04','Jully');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(6,'Alex Souza Dos Santos','10/02/2003','M','21/10/2020 09:55:27','AlexSouza');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(7,'Vitoria Dos Santos','08/04/2001','F','15/03/2019 12:43:13','VicSantos');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(8,'Alan Moraes','04/09/1955','M','14/12/2005 19:05:29','MoraesAlan');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(9,'Abigail Elias','04/09/1955','M','23/09/1943 22:17:55','AbiEli');
+
+INSERT INTO Alunos (id_aluno, nome, data_nasc, sexo, data_cadastro, login_cadastro) 
+VALUES 
+(10,'Aline Francisco','15/08/2004','F','16/03/2020 10:19:46','Alinefrans');
+
+
+############### PARA ADICIONAR CURSOS:
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(1, 'VBA I', '27/10/2020 15:00:00', 'ANDSS')
+
+INSERT INTO Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(2, 'Excel Básico', '21/10/2018 15:00:00', 'Alex')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(3, 'VBA III', '02/11/2019 15:00:00', 'ALESS')
+
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(4, 'Power Point', '02/06/2016 13:11:07', 'MariaL')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(5, 'Pacote Office Completo', '14/07/2017 17:05:04','Jully')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(6, 'PowerPoint','21/10/2020 09:55:27','AlexSouza')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(7, 'VBA II','15/03/2019 12:43:13','VicSantos')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(8, 'VBA II','14/12/2005 19:05:29','MoraesAlan')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(9, 'Excel Avançado','23/09/1943 22:17:55','AbiEli')
+
+INSERT INTO dbo.Cursos (id_curso, nome_curso, data_cadastro, login_cadastro)
+values
+(10, 'Excel Intermediário','16/03/2020 10:19:46','Alinefrans')
+
+
+########### ADD TURMAS:
+
+INSERT INTO Turmas
+(id_turma, id_curso, data_inicio, data_termino, data_cadastro, login_cadastro)
+VALUES
+(1,1, '20/10/2020','27/12/2020',GETDATE(), 'Alex')
+
+
+
+########## ADD AlunosxTurmas:
+
+INSERT INTO AlunosxTurmas
+(id_turma, id_aluno, valor, valor_desconto, data_cadastro, login_cadastro)
+VALUES
+(1,1, 1200, 0.1, GETDATE(), 'Alex')
+
+########## ADD Registro_Presenca
+
+INSERT INTO Registro_Presenca
+(id_turma, id_aluno, id_situacao, data_presenca, data_cadastro, login_cadastro)
+VALUES
+(1,1,1, '28/10/2020', '27/10/2020', 'ANDSS')
+
+######### ADD SITUAÇÃO:
+
+INSERT INTO Situacao
+(id_situacao, situacao, data_cadastro, login_cadastro)
+VALUES
+(4, 'Presença Confirmada', '28/10/2020', 'MariaL')
