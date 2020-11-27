@@ -1,6 +1,6 @@
 # projeto-sistema-escolar
 
-Software para sistema escolar em MySql e Java, simples. O sistema contém somente as funcionalidades básicas, desenvolvido a fim de obter nota para a matéria de Programação do 1ª período de Análise e Desenvolvimento de Sistemas.
+Software para sistema escolar em MySql e Java, simples. O sistema contém somente as funcionalidades básicas, desenvolvido para a matéria de Programação do 1ª período de Análise e Desenvolvimento de Sistemas.
 
 ---
 
